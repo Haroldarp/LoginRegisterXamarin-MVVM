@@ -13,7 +13,7 @@
 
     <ContentPage Title="Discovery" IconImageSource="map.png" BackgroundColor="#F1F1F2">
         <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid Margin="10,10,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -27,6 +27,7 @@
                 
                 <Frame Grid.Column="0" Grid.Row="0">
                     <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Image Source="{Binding Topic1.ImageUrl}" HeightRequest="100"/>
                         <Label Text="{Binding Topic1.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label HorizontalOptions="CenterAndExpand">
                             <Label.FormattedText>
@@ -41,6 +42,7 @@
                 
                 <Frame Grid.Column="1" Grid.Row="0">
                     <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Image Source="{Binding Topic2.ImageUrl}" HeightRequest="100"/>
                         <Label Text="{Binding Topic2.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label HorizontalOptions="CenterAndExpand">
                             <Label.FormattedText>
@@ -55,6 +57,7 @@
 
                 <Frame Grid.Column="0" Grid.Row="1">
                     <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Image Source="{Binding Topic3.ImageUrl}" HeightRequest="100"/>
                         <Label Text="{Binding Topic3.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label HorizontalOptions="CenterAndExpand">
                             <Label.FormattedText>
@@ -69,6 +72,7 @@
 
                 <Frame Grid.Column="1" Grid.Row="1">
                     <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Image Source="{Binding Topic4.ImageUrl}" HeightRequest="100"/>
                         <Label Text="{Binding Topic4.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label HorizontalOptions="CenterAndExpand">
                             <Label.FormattedText>
@@ -83,6 +87,7 @@
 
                 <Frame Grid.Column="0" Grid.Row="2">
                     <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Image Source="{Binding Topic5.ImageUrl}" HeightRequest="100"/>
                         <Label Text="{Binding Topic5.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label HorizontalOptions="CenterAndExpand">
                             <Label.FormattedText>
@@ -97,6 +102,7 @@
 
                 <Frame Grid.Column="1" Grid.Row="2">
                     <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Image Source="{Binding Topic6.ImageUrl}" HeightRequest="100"/>
                         <Label Text="{Binding Topic6.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label HorizontalOptions="CenterAndExpand">
                             <Label.FormattedText>

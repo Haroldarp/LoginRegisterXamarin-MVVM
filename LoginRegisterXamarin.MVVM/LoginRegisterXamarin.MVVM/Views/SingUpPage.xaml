@@ -3,25 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginRegisterXamarin.MVVM.Views.SingUpPage"
              BackgroundColor="White">
-
-    <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="White">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Image Source="logo.png" Grid.Column="0" Grid.Row="0" HeightRequest="150"></Image>
-        <Entry Text="{Binding User.Name}"  Placeholder="Name" Grid.Column="0" Grid.Row="1"/>
-        <Entry Text="{Binding User.Email}" Placeholder="Email" Grid.Column="0" Grid.Row="2"/>
-        <Entry Text="{Binding User.Password}" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="3"/>
-        <Entry Text="{Binding User.ConfirmPassword}" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="4"/>
-        <Button Command="{Binding OnRegisterClick}" Grid.Column="0" Grid.Row="5" Text="Register" BackgroundColor="#DA0015" TextColor="White"/>
-    </Grid>
-
+    <ScrollView>
+        <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="logo.png" Grid.Column="0" Grid.Row="0" HeightRequest="150"></Image>
+            <Entry Text="{Binding User.Name}"  Placeholder="Name" Grid.Column="0" Grid.Row="1"/>
+            <Entry Text="{Binding User.Email}" Placeholder="Email" Grid.Column="0" Grid.Row="2"/>
+            <Entry Text="{Binding User.Password}" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="3"/>
+            <Entry Text="{Binding User.ConfirmPassword}" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="4"/>
+            <Button Command="{Binding OnRegisterClick}" Grid.Column="0" Grid.Row="5" Text="Register" BackgroundColor="#DA0015" TextColor="White"/>
+        </Grid>
+    </ScrollView>
 </ContentPage>

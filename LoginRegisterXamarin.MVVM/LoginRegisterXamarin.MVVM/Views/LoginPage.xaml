@@ -4,27 +4,27 @@
              x:Class="LoginRegisterXamarin.MVVM.Views.LoginPage"
              BackgroundColor="White"
              NavigationPage.HasNavigationBar="false">
-    
-    <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Image Source="logo.png" Grid.Column="0" Grid.Row="0" HeightRequest="150"></Image>
-        <Entry Text="{Binding User.Email}"  Placeholder="Email"  Grid.Column="0" Grid.Row="1"/>
-        <Entry Text="{Binding User.Password}" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="2"/>
-        <Button Command="{Binding OnLoginClick}"  Grid.Column="0" Grid.Row="3" Text="Login" BackgroundColor="#DA0015" TextColor="White"/>
-        <Label Text="SingUp" Grid.Column="0" Grid.Row="4" TextColor="#DA0015" TextDecorations="Underline" HorizontalOptions="CenterAndExpand">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding OnSingUpLinkClick}"/>
-            </Label.GestureRecognizers>
-        </Label>
-    </Grid>
-    
+    <ScrollView>
+        <Grid Margin="10,0,10,0" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="logo.png" Grid.Column="0" Grid.Row="0" HeightRequest="150"></Image>
+            <Entry Text="{Binding User.Email}"  Placeholder="Email"  Grid.Column="0" Grid.Row="1"/>
+            <Entry Text="{Binding User.Password}" Placeholder="Password" IsPassword="True" Grid.Column="0" Grid.Row="2"/>
+            <Button Command="{Binding OnLoginClick}"  Grid.Column="0" Grid.Row="3" Text="Login" BackgroundColor="#DA0015" TextColor="White"/>
+            <Label Text="SingUp" Grid.Column="0" Grid.Row="4" TextColor="#DA0015" TextDecorations="Underline" HorizontalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OnSingUpLinkClick}"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -7,12 +7,20 @@ namespace LoginRegisterXamarin.MVVM.ViewModels
 {
     class LoginViewModel
     {
+        public User User { get; set; }
+       
+
+        public LoginViewModel()
+        {
+            User = new User();
+        }
+
+
         public ICommand OnSingUpLinkClick => new Command(async () =>
         {
             await App.Current.MainPage.Navigation.PushAsync(new SingUpPage());
         });
 
-        public User User { get; set; }
 
         public ICommand OnLoginClick => new Command(async () =>
         {
@@ -24,13 +32,6 @@ namespace LoginRegisterXamarin.MVVM.ViewModels
             {
                 await App.Current.MainPage.Navigation.PushAsync(new HomePage());
             }
-            //App.Current.MainPage.Navigation.InsertPageBefore(new HomePage(),new LoginPage());
-            //await App.Current.MainPage.Navigation.PopAsync();
         });
-
-        public LoginViewModel()
-        {
-            User = new User();
-        }
     }
 }
