@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginRegisterXamarin.MVVM.Views.HomePage"
+            BackgroundColor="White"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="#DA0015">
+    
+    <ContentPage Title="Home" IconImageSource="home.png">
+        
+    </ContentPage>
+
+    <ContentPage Title="Discovery" IconImageSource="map.png" BackgroundColor="#F1F1F2">
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid Margin="10,30,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Frame Grid.Column="0" Grid.Row="0">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="{Binding Topic1.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label HorizontalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Topic1.PlacesNum}"/>
+                                    <Span Text=" Places"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Grid.Column="1" Grid.Row="0">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="{Binding Topic2.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label HorizontalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Topic2.PlacesNum}"/>
+                                    <Span Text=" Places"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="1">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="{Binding Topic3.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label HorizontalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Topic3.PlacesNum}"/>
+                                    <Span Text=" Places"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Column="1" Grid.Row="1">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="{Binding Topic4.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label HorizontalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Topic4.PlacesNum}"/>
+                                    <Span Text=" Places"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="2">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="{Binding Topic5.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label HorizontalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Topic5.PlacesNum}"/>
+                                    <Span Text=" Places"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Column="1" Grid.Row="2">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="{Binding Topic6.Title}" FontSize="14" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label HorizontalOptions="CenterAndExpand">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding Topic6.PlacesNum}"/>
+                                    <Span Text=" Places"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+    
+    
+    <ContentPage Title="Bookmarks" IconImageSource="bookmark.png">
+       
+    </ContentPage>
+    <ContentPage Title="Trophies" IconImageSource="trophy.png">
+
+    </ContentPage>
+    <ContentPage Title="Profiles" IconImageSource="person.png">
+
+    </ContentPage>
+
+</TabbedPage>
